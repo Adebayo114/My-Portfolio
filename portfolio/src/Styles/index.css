@@ -1,0 +1,219 @@
+/* Base styles (Desktop and larger screens) */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 20, 36);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    max-width: 1200px; /* Restrict width for large screens */
+}
+
+.heading {
+    color: rgb(20, 251, 0);
+    font-weight: bold;
+    margin: 1rem auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+.navbar-child {
+    color: white;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    position: relative; /* To allow pseudo-element positioning */
+    transition: color 0.3s, transform 0.3s; /* Smooth hover animation */
+}
+
+.navbar-child:hover {
+    color: rgb(20, 251, 0); /* Change text color to green */
+    transform: scale(1.1); /* Slightly enlarge the text */
+}
+
+/* Adding the green underline */
+.navbar-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Distance from the text */
+    width: 0;
+    height: 2px;
+    background-color: rgb(20, 251, 0); /* Green color */
+    transition: width 0.3s ease; /* Smooth animation */
+}
+
+.navbar-child:hover::after {
+    width: 100%; /* Underline grows to full width */
+}
+
+.greeting-part {
+    margin: 3rem auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.part-kids {
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.part-kids2 {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.kids-3 {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 2rem auto;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.link1 {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    text-align: center;
+    border: 2px solid rgb(20, 251, 0);
+    transition: transform 0.5s;
+}
+
+.link1:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn1 {
+    display: inline-block;
+    font-family: cursive;
+    font-size: 1rem;
+    background-color: rgb(20, 251, 0);
+    color: rgb(0, 0, 0);
+    padding: 0.8rem 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: rgb(33, 211, 16);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+#myimage2 {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+.footer-child {
+    text-align: center;
+    color: rgb(33, 211, 16);
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-child {
+        margin: 0.5rem 0;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .greeting-part {
+        margin: 2rem 1rem;
+    }
+
+    .part-kids2 {
+        font-size: 1.8rem;
+    }
+
+    .kids-3 {
+        font-size: 0.9rem;
+    }
+
+    .btn1 {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+/* Small screens (Mobile phones) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .navbar-child {
+        margin: 0.3rem 0;
+        font-size: 0.9rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .part-kids2 {
+        font-size: 1.5rem;
+    }
+
+    .kids-3 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .logo-link {
+        flex-wrap: wrap;
+    }
+
+    .link1 {
+        width: 30px;
+        height: 30px;
+        padding: 0.3rem;
+    }
+
+    .btn1 {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #myimage2 {
+        width: 90%;
+    }
+}

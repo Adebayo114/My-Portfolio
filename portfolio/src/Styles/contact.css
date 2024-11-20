@@ -1,0 +1,72 @@
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .cd {
+    color: #ff6f61;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 20px;
+    flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+    margin: 20px 0;
+  }
+  
+  .social-icon,
+  .social-icon2 {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon2 {
+    height: 120px; /* Keeps a different height for .social-icon2 */
+  }
+  
+  .social-icon:hover,
+  .social-icon2:hover {
+    transform: scale(1.1);
+  }
+  
+  .main-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media screen and (max-width: 600px) {
+    .social-icon,
+    .social-icon2 {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .social-icon2 {
+      height: 90px; /* Adjust proportionately */
+    }
+  
+    .header {
+      font-size: 1.5rem;
+    }
+  
+    .social-media {
+      gap: 10px;
+    }
+  }
+  

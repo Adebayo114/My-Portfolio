@@ -1,0 +1,71 @@
+.start {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cd {
+  color: #ff6f61;
+}
+
+/* Flexbox for the project container */
+.show-room {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
+  gap: 20px;
+  justify-content: center; /* Centers the items horizontally */
+}
+
+/* Individual project cards */
+.show-kids {
+  flex: 1 1 300px; /* Uniform size for each card */
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover; /* Ensures the image fills the card */
+  background-position: center; /* Centers the background image */
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Overlay text for each project */
+.show-kids1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .show-kids {
+    flex: 1 1 calc(50% - 20px); /* Two columns for tablets and small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .show-kids {
+    flex: 1 1 100%; /* Full width for mobile screens */
+  }
+
+  .heading2 {
+    font-size: 1.5rem; /* Smaller heading for mobile */
+  }
+
+  .show-kids1 {
+    font-size: 1.2rem; /* Adjust font size for readability on small screens */
+  }
+}

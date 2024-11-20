@@ -1,0 +1,145 @@
+/* General Styles */
+.start {
+    font-family: Arial, sans-serif;
+    color: #14FB00;
+    background-color: #001428;
+    padding: 2rem;
+    margin: 0;
+}
+
+/* Header */
+.border-line {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #14FB00;
+}
+
+/* Section Titles */
+.text1, .text2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #14FB00;
+    margin: 2rem 0;
+}
+
+.fwt {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Skills Section */
+.skills-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.skills-img-kids,
+.skills-img-kids2 {
+    background-color: #001428;
+    box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.4s;
+}
+
+.skills-img-kids:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.text-kid1 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #14FB00;
+}
+
+.head-text {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer-child {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: #21D310;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-child:hover {
+    color: #FFFFFF;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .skills-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-img-kids,
+    .skills-img-kids2 {
+        width: 90%;
+    }
+
+    .text1, .text2 {
+        font-size: 1.8rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text1, .text2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-img {
+        gap: 1rem;
+    }
+
+    .skills-img-kids,
+    .skills-img-kids2 {
+        width: 95%;
+    }
+
+    .footer-child {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .text1, .text2 {
+        font-size: 1.2rem;
+    }
+
+    .skills-img-kids,
+    .skills-img-kids2 {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-child {
+        font-size: 0.8rem;
+    }
+}
+
+
