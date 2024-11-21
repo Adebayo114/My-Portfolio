@@ -15,14 +15,14 @@
         </div>
 
         <div className="show-room">
-           <Link to="https://adebayo114.github.io/Flame-game/">
+           {/* <Link to="https://adebayo114.github.io/Flame-game/">
             <div
                 className="show-kids"
                 style={{ backgroundImage: `url(${bckground1})` }}
                 >
                 <div className="show-kids1">Flames Games</div>
                 </div>
-           </Link>
+           </Link> */}
 
 
             <Link to="https://hng2-eta.vercel.app/">
@@ -33,14 +33,14 @@
                 <div className="show-kids1">Pc Zone</div>
                 </div>
             </Link>
-
+{/* 
             <Link to="https://adebayo114.github.io/L-Site/">
                 <div className="show-kids"
                 style={{ backgroundImage: `url(${bckground3})` }}
                 >
                 <div className="show-kids1">Auto mobile Homepage</div>
                 </div>
-            </Link>
+            </Link> */}
 {/* 
             <div className="show-kids">
             <div className="show-kids1"></div>

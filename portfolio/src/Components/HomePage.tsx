@@ -48,9 +48,10 @@
             </div>
 
             {/* Download CV button */}
-            <a href="portfolio\src\assets\Cv" download className="btn1">
-            Download CV
+            <a href="/assets/Cv/Adebayo%20Oladayo%20CV.pdf" download className="btn1">
+                Download CV
             </a>
+
         </div>
 
         {/* Uncomment if the image is necessary */}
