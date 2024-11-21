@@ -1,10 +1,7 @@
-
     import '..//Styles/index.css';
     import TwitterLogo from '../assets/images/twitter.png';
     import InstagramLogo from '../assets/images/instagram (2).png';
     import LinkedInLogo from '../assets/images/linked-in-logo-of-two-letters.png';
-    
-// Import the NavBar component
 
     function HomePage() {
     return (
@@ -19,7 +16,7 @@
             <br />
             <div className="kids-3">
                 As a web developer, I have the power to bring ideas to life on the
-                digital frontier. I expertise in coding languages, design
+                digital frontier. My expertise in coding languages, design
                 principles, and problem-solving skills allows me to craft visually
                 stunning and functional websites and web applications. With a keen
                 eye for detail and a passion for innovation, I strive to create
@@ -31,8 +28,6 @@
             </div>
 
             <div className="logo-link">
-
-
             <div className="link1">
                 <a href="https://twitter.com/DayoAdebay86128">
                 <img src={TwitterLogo} alt="Twitter Logo" />
@@ -47,15 +42,15 @@
 
             <div className="link1">
                 <a href="https://www.linkedin.com/in/adebayo-oladayo-a8b491266">
-                <img
-                src={LinkedInLogo}
-                alt="LinkedIn Logo"
-                />
+                <img src={LinkedInLogo} alt="LinkedIn Logo" />
                 </a>
             </div>
             </div>
 
-            <div className="btn1">Download CV</div>
+            {/* Download CV button */}
+            <a href="portfolio\src\assets\Cv" download className="btn1">
+            Download CV
+            </a>
         </div>
 
         {/* Uncomment if the image is necessary */}
