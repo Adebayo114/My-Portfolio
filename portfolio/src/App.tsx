@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './Components/NavBar'; // Import the NavBar
 import Footer from './Components/Footer'; // Import the Footer
 import HomePage from './Components/HomePage';
@@ -13,7 +13,7 @@ import WebDev from './Components/WebDev';
 
 function App() {
   return (
-    <Router>
+    <Router> {/* Changed to HashRouter */}
       <NavBar /> {/* NavBar is always displayed */}
       <Routes>
         <Route path="/" element={<HomePage />} />
