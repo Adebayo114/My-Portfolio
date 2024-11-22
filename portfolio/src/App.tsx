@@ -10,6 +10,7 @@ import Proficiencies from './Components/Proficiencies';
 import FrontEnd from './Components/FrontEnd';
 import Gp from './Components/Gp';
 import WebDev from './Components/WebDev';
+import NotFound from './Components/NotFound';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/frontend" element={<FrontEnd />} />
         <Route path="/grph" element={<Gp />} />
         <Route path="/wd" element={<WebDev />} />
+        <Route path="/nf" element={<NotFound />} />
       </Routes>
       <Footer /> {/* Footer is always displayed */}
     </Router>
