@@ -1,8 +1,7 @@
     import "../Styles/portfolio.css"; // Import your CSS file
     import "animate.css"; // Import animate.css for animations
-    import bckground1 from "../assets/images1/fg.png";
     import bckground2 from "../assets/images1/pce.jpeg";
-    import bckground3 from "../assets/images1/cec.jpg";
+    import githubLogo from "../assets/Socials/gh.png"; // Add your GitHub logo image path here
 
     const Projects: React.FC = () => {
     return (
@@ -14,20 +13,7 @@
         </div>
 
         <div className="show-room">
-            {/* External links should use <a> instead of <Link> */}
-            <a
-            href="https://adebayo114.github.io/Flame-game/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <div
-                className="show-kids"
-                style={{ backgroundImage: `url(${bckground1})` }}
-            >
-                <div className="show-kids1">Flames Games</div>
-            </div>
-            </a>
-
+            {/* Project Link */}
             <a
             href="https://hng2-eta.vercel.app/"
             target="_blank"
@@ -41,18 +27,20 @@
             </div>
             </a>
 
+            {/* GitHub Repository Link */}
             <a
-            href="https://adebayo114.github.io/L-Site/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <div
-                className="show-kids"
-                style={{ backgroundImage: `url(${bckground3})` }}
-            >
-                <div className="show-kids1">Auto mobile Homepage</div>
-            </div>
+                    href="https://github.com/Adebayo114"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="github-link"
+                    aria-label="Visit my GitHub profile"
+                    >
+                    <div className="github-logo">
+                        <img src={githubLogo} alt="GitHub Logo" />
+                    </div>
             </a>
+<div className="text">Head for GitHub pages when attempting to view Hosted live pages</div>
+
         </div>
         </div>
     );

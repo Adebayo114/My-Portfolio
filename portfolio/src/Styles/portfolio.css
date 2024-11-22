@@ -69,3 +69,23 @@
     font-size: 1.2rem; /* Adjust font size for readability on small screens */
   }
 }
+
+.github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+.github-logo img {
+  width: 60px;
+  height: auto;
+}
+
+.text {
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  margin-top: 10px;
+}
